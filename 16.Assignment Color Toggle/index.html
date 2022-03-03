@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Toggle Menu</title>
+    <title>Assignment Color Toggle</title>
     <script defer src="script.js?speed=2"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <img
       onclick="toggleMenu()"
@@ -14,41 +13,31 @@
       width="50px"
     />
     <ul id="toggleMenuContent" class="menu-content">
-      <label>
-        <li class="home" onclick="changeColor('darkcyan', 'Dark Cyan');">
-          <input type="radio" name="choice" />HOME
-        </li>
-      </label>
-      <label>
-        <li
-          class="darkRed"
-          id="darkRed"
-          onclick="changeColor('darkred', 'Dark Red');"
-        >
-          <input type="radio" name="choice" />DARK RED
-        </li>
-      </label>
-      <label>
-        <li
-          class="darkSlateBlue"
-          onclick="changeColor('darkslateblue', 'Dark Slate Blue');"
-        >
-          <input type="radio" name="choice" />DARK SLATE BLUE
-        </li>
-      </label>
-      <label>
-        <li
-          class="darkOliveGreen"
-          onclick="changeColor('darkolivegreen', 'Dark Olive Green');"
-        >
-          <input type="radio" name="choice" />DARK OLIVE GREEN
-        </li>
-      </label>
-      <label>
-        <li class="purple" onclick="changeColor('purple', 'Purple');">
-          <input type="radio" name="choice" />PURPLE
-        </li>
-      </label>
+      <li class="home" onclick="changeColor('darkcyan', 'Dark Cyan');">
+        <input type="radio" name="choice" />HOME
+      </li>
+      <li
+        class="darkRed"
+        id="darkRed"
+        onclick="changeColor('darkred', 'Dark Red');"
+      >
+        <input type="radio" name="choice" />DARK RED
+      </li>
+      <li
+        class="darkSlateBlue"
+        onclick="changeColor('darkslateblue', 'Dark Slate Blue');"
+      >
+        <input type="radio" name="choice" />DARK SLATE BLUE
+      </li>
+      <li
+        class="darkOliveGreen"
+        onclick="changeColor('darkolivegreen', 'Dark Olive Green');"
+      >
+        <input type="radio" name="choice" />DARK OLIVE GREEN
+      </li>
+      <li class="purple" onclick="changeColor('purple', 'Purple');">
+        <input type="radio" name="choice" />PURPLE
+      </li>
     </ul>
     <div id="colorText"></div>
   </body>
